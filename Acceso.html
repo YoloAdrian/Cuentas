@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso a usuarios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Encabezado">
+        <h1>Inicia sesion</h1>
+    </div>
+    <form name="formulario1" method="post" autocomplete="off" class="formulario">
+        <legend>Accede con tu usuario</legend>
+        <div class="Form">
+        <table><tr>
+            <td><label for=""> Agrega tu nombre de usuario</label></td>
+            <td><input class="Datos" type="text" name="Usuario"  placeholder="Usuario" pattern="[A-Za-z]{5,15}" title="Más de 5 caracteres, solo letras" required></td>
+        </tr>
+        <tr>
+            <td><label for="">Agrega tu contraseña</label></td>
+            <td><input class="Datos" type="password" name="password" placeholder="password" pattern="[A-Za-z0-9]{5,14}" title="Más de 5 caracteres" required ></td>
+        </tr>
+        <tr>
+            <td><label for=""></label></td>
+            <td><input class="Boton" type="submit" value="Iniciar sesion"></td>
+        </tr></table>
+        </div>
+        <div class="Piepag">
+            <p>¿Aun no tienes una cuenta?</p>
+            <a href="Cuentas.html" target="_blank" class="Newcuenta">Haz click para crear una</a>
+            <p>¿Olvidaste tu contraseña?</p>
+            <a href="Recuperacion.html" target="_blank" class="Newcuenta">Haz click para recuperar tu cuenta</a>
+        </div>
+    </form>
+</body>
+</html>
